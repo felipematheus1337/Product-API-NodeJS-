@@ -1,11 +1,10 @@
-import { where } from 'sequelize';
 import Produto from '../models/Produto';
 
 class ProdutoController {
   async store(req, res) {
     try {
-      const novoAluno = await Produto.create(req.body);
-      return res.status(201).json(novoAluno);
+      const novoProduto = await Produto.create(req.body);
+      return res.status(201).json(novoProduto);
     } catch (e) {
       console.log(e);
       return res.status(400).json({ err: e });

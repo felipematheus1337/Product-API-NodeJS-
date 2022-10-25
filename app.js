@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 import homeRoutes from './src/routes/homeRoutes';
 import produtoRoutes from './src/routes/produtoRoutes';
+import usuarioRoutes from './src/routes/usuarioRoutes';
 import './src/database';
 
 class App {
@@ -21,6 +22,7 @@ class App {
   routes() {
     this.app.use('/home', homeRoutes);
     this.app.use('/produtos', produtoRoutes);
+    this.app.use('/usuarios', usuarioRoutes);
   }
 }
 
