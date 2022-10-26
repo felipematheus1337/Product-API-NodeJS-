@@ -11,3 +11,16 @@ Autenticação JWT
 </ul> 
 
 
+<h4>Tecnologias Utilizadas:</h4>
+<ul>
+<li>
+NodeJS
+</li>
+<li>Express</li>
+<li>MySQL</li>
+<li>Sequelize</li>
+<li>Multer</li>
+<li>JSON WEB TOKEN</li>
+</ul> 
+
+
